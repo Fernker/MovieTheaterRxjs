@@ -1,0 +1,21 @@
+.theater {
+  border: 1px solid black;
+  width: 500px;
+  height: 700px;
+  background: #444;
+
+  &__screen {
+    width: 90%;
+    height: 25px;
+    background: black;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+
+  &__controls {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}

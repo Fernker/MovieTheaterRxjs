@@ -1,0 +1,15 @@
+<div class="theater">
+  <div class="theater__screen">Screen</div>
+
+  <div class="theater__controls">
+    <button (click)="clearSeats()">Clear Selection</button>
+    <button>Reserve Selection</button>
+  </div>
+
+  <row *ngFor="let row of rows">
+    <ng-container *ngFor="let seat of [].constructor(11); index as seatNum">
+      <seat seatState="AVAILABLE" (click)="selectSeat(row, seatNum)">{{ row }}-{{ seatNum }}</seat>
+    </ng-container>
+  </row>
+</div>
+

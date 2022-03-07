@@ -1,0 +1,23 @@
+.seat {
+  width: 40px;
+  height: 40px;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &--available {
+    background-color: green;
+  }
+
+  &--selected {
+    background-color: orange;
+  }
+
+  &--reserved {
+    background-color: red;
+  }
+}
