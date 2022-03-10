@@ -7,9 +7,6 @@ import { TicketsQuery } from '../../stores/tickets/tickets.query';
   styleUrls: ['./theater.component.scss'],
 })
 export class TheaterComponent implements OnInit {
-  rows = ['A', 'B', 'C', 'D', 'E'];
-  seatsPerRow = [10];
-
   constructor(
     private _ticketsQuery: TicketsQuery,
     private _ticketsManager: TicketsManager
@@ -17,7 +14,7 @@ export class TheaterComponent implements OnInit {
 
   ngOnInit() {}
 
-  selectSeat(row, seatNum) {}
+  selectSeat() {}
 
   clearSeats() {}
 
